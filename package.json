@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest exercises/reverseint/test.js --watch"
+    "test": "jest exercises/maxchar/test.js --watch"
   },
   "author": "Enes Karakaş",
   "license": "ISC",
