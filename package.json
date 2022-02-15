@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "jest exercises/chunk/test.js --watch"
+    "start": "jest exercises/anagrams/test.js --watch"
   },
   "author": "Enes Karakaş",
   "license": "ISC",
