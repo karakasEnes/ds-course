@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "jest exercises/capitalize/test.js --watch"
+    "start": "jest exercises/steps/test.js --watch"
   },
   "author": "Enes Karakaş",
   "license": "ISC",
