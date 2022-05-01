@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "jest exercises/vowels/test.js --watch"
+    "start": "jest exercises/matrix/test.js --watch"
   },
   "author": "Enes Karakaş",
   "license": "ISC",
