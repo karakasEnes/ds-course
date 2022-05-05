@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "jest exercises/fib/test.js --watch"
+    "start": "jest exercises/queue/test.js --watch"
   },
   "author": "Enes Karakaş",
   "license": "ISC",
