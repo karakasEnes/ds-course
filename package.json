@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "jest exercises/weave/test.js --watch"
+    "start": "jest exercises/stack/test.js --watch"
   },
   "author": "Enes Karakaş",
   "license": "ISC",
