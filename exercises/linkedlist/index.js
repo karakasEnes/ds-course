@@ -86,6 +86,72 @@ class LinkedList {
 
     prevNode.next = null;
   }
+
+  insertLast(data) {
+    const insertNode = new Node(data, null);
+    if (!this.head) {
+      this.head = insertNode;
+      return;
+    }
+
+    const lastNode = this.getLast();
+    lastNode.next = insertNode;
+  }
+
+  getAt(wantedIndex) {
+    let node = this.head;
+    for (let count = 0; count < wantedIndex; count++) {
+      if (!node) {
+        return null;
+      }
+      node = node.next;
+    }
+    return node;
+  }
+
+  removeAt(removeIndex) {
+    if (!this.head) {
+      return null;
+    }
+
+    if (removeIndex === 0) {
+      this.head = this.head.next;
+      return;
+    }
+
+    const prvNode = this.getAt(removeIndex - 1);
+    if (!prvNode || !prvNode.next) return;
+    prvNode.next = prvNode.next.next;
+  }
+
+  insertAt(data, insertIndex) {
+    // if list is empty
+    if (!this.head) {
+      this.head = new Node(data, null);
+      return;
+    }
+
+    // if insertIndex is 0
+    if (insertIndex === 0) {
+      this.head = new Node(data, this.head);
+      return;
+    }
+
+    let prvNode = this.getAt(insertIndex - 1);
+
+    //out bound! and insert last
+    if (!prvNode || !prvNode.next) {
+      let lastNode = this.getLast();
+      lastNode.next = new Node(data, null);
+      return;
+    }
+
+    //insert middle
+    if (prvNode.next.next) {
+      prvNode.next = new Node(data, prvNode.next);
+      return;
+    }
+  }
 }
 
 module.exports = { Node, LinkedList };
