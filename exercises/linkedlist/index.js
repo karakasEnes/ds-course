@@ -30,17 +30,19 @@ class LinkedList {
   }
 
   getFirst() {
-    return this.head;
+    return this.getAt(0);
   }
 
   getLast() {
-    let curNode = this.head;
+    // let curNode = this.head;
 
-    while (curNode.next !== null) {
-      curNode = curNode.next;
-    }
+    // while (curNode.next !== null) {
+    //   curNode = curNode.next;
+    // }
 
-    return curNode ? curNode : null;
+    // return curNode ? curNode : null;
+
+    return this.getAt(this.size() - 1);
   }
 
   clear() {
