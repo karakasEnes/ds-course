@@ -28,6 +28,29 @@ class Node {
   }
 }
 
-class Tree {}
+class Tree {
+  constructor() {
+    this.root = null;
+  }
+
+  traverseBF(fn) {
+    if (!this.root) return;
+
+    let arr = [this.root];
+
+    while (arr.length > 0) {
+      let firstItem = arr.shift();
+      let children = firstItem.children;
+
+      fn(firstItem);
+
+      if (children) {
+        for (let c of children) {
+          arr.push(c);
+        }
+      }
+    }
+  }
+}
 
 module.exports = { Tree, Node };
