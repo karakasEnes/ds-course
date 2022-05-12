@@ -154,6 +154,27 @@ class LinkedList {
       return;
     }
   }
+
+  forEach(fn) {
+    if (!this.head) return;
+
+    let curNode = this.head;
+    let curIndex = 0;
+    while (curNode) {
+      fn(curNode, curIndex);
+      curIndex++;
+      curNode = curNode.next;
+    }
+  }
+
+  *[Symbol.iterator]() {
+    let node = this.head;
+
+    while (node) {
+      yield node;
+      node = this.head.next;
+    }
+  }
 }
 
 module.exports = { Node, LinkedList };
