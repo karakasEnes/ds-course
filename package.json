@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "jest exercises/linkedlist/test.js --watch"
+    "start": "jest exercises/midpoint/test.js --watch"
   },
   "author": "Enes Karakaş",
   "license": "ISC",
