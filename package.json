@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "jest exercises/bst/test.js --watch"
+    "start": "jest exercises/validate/test.js --watch"
   },
   "author": "Enes Karakaş",
   "license": "ISC",
